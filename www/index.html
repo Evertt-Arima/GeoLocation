@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="css/js/jquery.min.js"></script>
+  <script src="css/js/bootstrap.min.js"></script>
+
+  <!--Scripts and CSS of MapQuest-->
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
+  <script src="css/js/comando.js"></script>
+
+</head>
+<body>
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>GPMax</h1>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="jumbotron">
+        
+        <p>Bem-Vindo ao GPMax, com esse aplicativo você verificar a sua localização atual através do GPS do seu dispositivo smartphone e também tem que está conectado à Internet. Para verificar sua localização atual, clique aqui no botão em baixo:</p>
+
+        <button class="btn btn-primary" data-toggle="modal" data-target="#gpMax">Clique Aqui</button>
+      </div>
+    </div>
+  </div>
+  <!--Show GPMax Window-->
+  <div id="gpMax" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">GpMax Window</h4>
+        </div>
+
+        <div class="modal-body">
+
+          <div id="map"></div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-dismiss="modal">Voltar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
